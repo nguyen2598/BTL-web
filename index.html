@@ -31,12 +31,24 @@
         rel="stylesheet" 
         href="./assest/css/grid.css"
     >
+    <link 
+        rel="stylesheet" 
+        href="./assest/css/responsive.css"
+    >
+    <link 
+        rel="stylesheet" 
+        href="./assest/css/hidden.css"
+    >
+
     <title>Shop Nhà</title>
 </head>
 <body>
     <div id="app">
         <header class="header">
             <div class="grid wide">
+                <div class="nav-bar--extra">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
                 <div class="header-left">
                     <img src="./assest/images/logo/logo-header.png" alt="">
                 </div>
@@ -85,9 +97,42 @@
                 </div>
             </div>
         </header>
+        <div class="nav-bar__extra--content hidden">
+            <div class="nav-bar--overlay"></div>
+            <div class="nav-bar--list">
+                <div class="nav-bar__extra--icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="nav-bar__extra--login">Dang nhap</div>
+                <div class="nav-bar__extra--search">
+                    <input type="text" name="" id="">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="nav-bar--list-item">
+                    <ul class="nav-bar__extra-list">
+                        <li class="nav-bar__extra-item">
+                            <a href="">Trang chủ</a>
+                        </li>
+                        <li class="nav-bar__extra-item">
+                            <a href="">Sản phẩm</a>
+                        </li>
+                        <li class="nav-bar__extra-item">
+                            <a href="">Tin mới</a>
+                        </li>
+                        <li class="nav-bar__extra-item nav-bar__extra-item--Notification">
+                            <a href="">Thông báo</a>
+                            <span>100</span>
+                        </li>
+                        <li class="nav-bar__extra-item">
+                            <a href="">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div class="slider">
             <div class="grid wide">
-                <div class="row">
+                <div class="row slides-contents">
                     <div class="slide-left col l-9 m-12 c-12">
                         <div class="slide-left--wrap">
                             <div class="slide-left--content">
@@ -149,8 +194,8 @@
         </div>
         <div class="content"></div>
         <footer class="footer">
-            <div class="grid wide footer--content">
-                <div class="row">
+            <div class="grid wide">
+                <div class="row footer--content">
                     <div class="col l-3 m-4 c-12">
                         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
                         <ul class="footer-list">
@@ -194,7 +239,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col l-3 m-4 c-12">
+                    <div class="col l-2 m-4 c-12">
                         <h3 class="footer__heading">Theo dõi</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -217,9 +262,10 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col l-3 m-6 c-6">
+                    <div class="col l-4 m-12 c-12">
                         <div class="footer-logo">
-                            <img src="./assest/images/logo/logo-header.png" alt="">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.2926376894443!2d105.78743790000001!3d20.9809035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135accdd8a1ad71%3A0xa2f9b16036648187!2zSOG7jWMgdmnhu4duIEPDtG5nIG5naOG7hyBCxrB1IGNow61uaCB2aeG7hW4gdGjDtG5n!5e0!3m2!1svi!2s!4v1678881823080!5m2!1svi!2s" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <!-- <img src="./assest/images/logo/logo-header.png" alt=""> -->
                         </div>
                     </div>
                 </div>
@@ -232,4 +278,5 @@
         </footer>
     </div>
 </body>
+<script src="./assest/js/testHiddenHeader.js"></script>
 </html>

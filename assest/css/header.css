@@ -12,6 +12,16 @@
     /* overflow: hidden; */
 }
 
+.header .wide .nav-bar--extra{
+    display: none;
+    margin: auto 0;
+    cursor: pointer;
+}
+
+.header .wide .nav-bar--extra i{
+    font-size: 4rem;
+}
+
 .header .wide .header-left{
     display: flex;
     align-items: center;
@@ -244,6 +254,98 @@
 .slide-right--item .slide-right--content p{
     font-size: 1.4rem;
     margin: 1rem 0;
+}
+
+
+/* Fix */
+.nav-bar__extra--content .nav-bar--overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(0,0,0,.62);
+}
+
+.nav-bar__extra--content .nav-bar--list{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60%;
+    max-width: 35rem;
+    bottom: 0;
+    z-index: 11;
+    padding-left: 1rem;
+    background-color: rgba(255,255,255,1);
+    font-size: 1.6rem;
+}
+
+/* .nav-bar--list .nav-bar__extra--icon{
+    display: block;
+} */
+.nav-bar--list .nav-bar__extra--icon i{
+    margin: 2.5rem 0;
+    font-size: 3rem;
+}
+
+.nav-bar--list .nav-bar__extra--login{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-color-header);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+.nav-bar--list .nav-bar__extra--search{
+    display: flex;
+    align-items: center;
+    border: 0.1rem solid #b7b7b6;
+    border-radius: 2rem;
+    height: 4rem;
+    position: relative;
+    overflow: hidden;
+    margin-right: 1rem;
+}
+
+.nav-bar--list .nav-bar__extra--search input{
+    background-color: var(--primary-bgcolor-header);
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    height: 100%;
+    width: 100%;
+    padding-left: 1.9rem;
+}
+
+.nav-bar--list .nav-bar__extra--search i {
+    border-left: 1px solid #b7b7b6;
+    font-size: 1.8rem;
+    padding: 0 10px;
+}
+
+.nav-bar--list .nav-bar--list-item{
+    margin-top: 2rem;
+}
+
+.nav-bar__extra-list .nav-bar__extra-item{
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.nav-bar__extra-list .nav-bar__extra-item--Notification{
+    position: relative;
+}
+.nav-bar__extra-list .nav-bar__extra-item--Notification span{
+    position: absolute;
+    top: -0.2rem;
+    left: 8rem;
+    background-color: #f44336;
+    border-radius: 50%;
+    padding: 0.1rem 0.2rem;
+    color: #fff;
+    font-size: 1.2rem;
 }
 
 /* Cần xóa */
