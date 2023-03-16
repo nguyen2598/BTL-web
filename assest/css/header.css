@@ -146,7 +146,7 @@
     padding: 0;
     position: relative;
     z-index: 1;
-    height: 26.8rem;
+    /* height: 26.8rem; */
     overflow: hidden;
     border-radius: 0.5rem;
 }
@@ -154,13 +154,13 @@
 .slide-left .slide-left--wrap .slide-left--content{
     display: flex;
     height: 100%;
-    position: relative;
+    /* position: relative; */
     width: 100%;
     z-index: 1;
 }
 
 .slide-left--wrap .slide-left--content .slide-show{
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     height: 100%;
 }
