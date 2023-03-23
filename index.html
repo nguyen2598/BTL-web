@@ -1,172 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link 
-        rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
-        crossorigin="anonymous" 
-        referrerpolicy="no-referrer" 
-    />
-    <link 
-        rel="stylesheet" 
-        href="./assest/css/root.css"
-    >
-    <link 
-        rel="stylesheet" 
-        href="./assest/css/reset.css"
-    >
-    <link 
-        rel="stylesheet" 
-        href="./assest/css/header.css"
-    >
-    <link 
-        rel="stylesheet" 
-        href="./assest/css/footer.css"
-    >
-    <link 
-        rel="stylesheet" 
-        href="./assest/css/grid.css"
-    >
-    <link 
-        rel="stylesheet" 
-        href="./assest/css/responsive.css"
-    >
-    <link 
-        rel="stylesheet" 
-        href="./assest/css/hidden.css"
-    >
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./assest/css/root.css" />
+        <link rel="stylesheet" href="./assest/css/reset.css" />
+        <link rel="stylesheet" href="./assest/css/header.css" />
+        <link rel="stylesheet" href="./assest/css/slider.css" />
+        <link rel="stylesheet" href="./assest/css/footer.css" />
+        <link rel="stylesheet" href="./assest/css/grid.css" />
+        <link rel="stylesheet" href="./assest/css/responsive.css" />
+        <link rel="stylesheet" href="./assest/css/hidden.css" />
 
-    <title>Shop Nhà</title>
-</head>
-<body>
-    <div id="app">
-        <header class="header">
-            <div class="grid wide">
-                <div class="nav-bar--extra">
-                    <i class="fa-solid fa-bars"></i>
+        <title>Shop Nhà</title>
+    </head>
+    <body>
+        <div id="app">
+            <header class="header">
+                <div class="grid wide">
+                    <div c lass="nav-bar--extra">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="header-left">
+                        <img src="./assest/images/logo/logo-header.png" alt="" />
+                    </div>
+                    <div class="header-center">
+                        <div class="navbar8">
+                            <ul class="navbar8-list">
+                                <li class="navbar8-item">
+                                    <a href="">Trang chủ</a>
+                                </li>
+                                <li class="navbar8-item">
+                                    <a href="">Sản phẩm</a>
+                                </li>
+                                <li class="navbar8-item">
+                                    <a href="">Tin mới</a>
+                                </li>
+                                <li class="navbar8-item navbar8-item--Notification">
+                                    <a href="">Thông báo</a>
+                                    <span>100</span>
+                                </li>
+                                <li class="navbar8-item">
+                                    <a href="">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="search-nav">
+                            <div class="search-box">
+                                <input type="text" name="" id="" />
+                                <div class="search-auto" hidden>
+                                    <li><span>Quan ao 1</span></li>
+                                    <li><span>Quan ao 2</span></li>
+                                    <li><span>Quan ao 3</span></li>
+                                    <li><span>Quan ao 4</span></li>
+                                </div>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <div class="login">
+                            <a href="" class="login-a">Dang nhap</a>
+                        </div>
+                        <div class="cart-icon">
+                            <a href="">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                            <span>0</span>
+                            <!-- /* Ngay  18/3/2023*/ -->
+                            <div class="cart-header--product">
+                                <h3 class="cart-header-product__heading">Sản phẩm mới thêm</h3>
+                                <ul class="cart-header-product__list">
+                                    <!-- lấy từ database nên xóa -->
+                                    <li class="cart-header-product__item">
+                                        <div class="cart-header-product__item--img">
+                                            <img
+                                                src="https://down-vn.img.susercontent.com/file/f4ede74431bd59fab463b6003e0efbde_tn"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="cart-header-product__item--content">
+                                            op dien thoai in hinh onepiece 12promax sieu chat luong 12promax sieu chat
+                                            luong
+                                        </div>
+                                        <div class="cart-header-product__item--price">1200000d</div>
+                                    </li>
+                                    <li class="cart-header-product__item">
+                                        <div class="cart-header-product__item--img">
+                                            <img
+                                                src="https://down-vn.img.susercontent.com/file/f4ede74431bd59fab463b6003e0efbde_tn"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="cart-header-product__item--content">
+                                            op dien thoai in hinh onepiece 12promax sieu chat luong 12promax sieu chat
+                                            luong
+                                        </div>
+                                        <div class="cart-header-product__item--price">1200000d</div>
+                                    </li>
+                                    <li class="cart-header-product__item">
+                                        <div class="cart-header-product__item--img">
+                                            <img
+                                                src="https://down-vn.img.susercontent.com/file/f4ede74431bd59fab463b6003e0efbde_tn"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="cart-header-product__item--content">
+                                            op dien thoai in hinh onepiece 12promax sieu chat luong 12promax sieu chat
+                                            luong
+                                        </div>
+                                        <div class="cart-header-product__item--price">1200000d</div>
+                                    </li>
+                                    <li class="cart-header-product__item">
+                                        <div class="cart-header-product__item--img">
+                                            <img
+                                                src="https://down-vn.img.susercontent.com/file/f4ede74431bd59fab463b6003e0efbde_tn"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="cart-header-product__item--content">
+                                            op dien thoai in hinh onepiece 12promax luong
+                                        </div>
+                                        <div class="cart-header-product__item--price">1200000d</div>
+                                    </li>
+                                    <li class="cart-header-product__item">
+                                        <div class="cart-header-product__item--img">
+                                            <img
+                                                src="https://down-vn.img.susercontent.com/file/f4ede74431bd59fab463b6003e0efbde_tn"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="cart-header-product__item--content">sieu chat luong 12pro</div>
+                                        <div class="cart-header-product__item--price">1200000d</div>
+                                    </li>
+                                    <!-- Lấy từ database nên xóa -->
+                                </ul>
+                                <a href="">
+                                    <button class="cart-header-product__btn">Xem tất cả</button>
+                                </a>
+                            </div>
+                            <!-- /* Ngay  18/3/2023*/ -->
+                        </div>
+                    </div>
                 </div>
-                <div class="header-left">
-                    <img src="./assest/images/logo/logo-header.png" alt="">
-                </div>
-                <div class="header-center">
-                    <div class="navbar8">
-                        <ul class="navbar8-list">
-                            <li class="navbar8-item">
+            </header>
+            <div class="nav-bar__extra--content hidden">
+                <div class="nav-bar--overlay"></div>
+                <div class="nav-bar--list">
+                    <div class="nav-bar__extra--icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="nav-bar__extra--login">Dang nhap</div>
+                    <div class="nav-bar__extra--search">
+                        <input type="text" name="" id="" />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="nav-bar--list-item">
+                        <ul class="nav-bar__extra-list">
+                            <li class="nav-bar__extra-item">
                                 <a href="">Trang chủ</a>
                             </li>
-                            <li class="navbar8-item">
+                            <li class="nav-bar__extra-item">
                                 <a href="">Sản phẩm</a>
                             </li>
-                            <li class="navbar8-item">
+                            <li class="nav-bar__extra-item">
                                 <a href="">Tin mới</a>
                             </li>
-                            <li class="navbar8-item navbar8-item--Notification">
+                            <li class="nav-bar__extra-item nav-bar__extra-item--Notification">
                                 <a href="">Thông báo</a>
                                 <span>100</span>
                             </li>
-                            <li class="navbar8-item">
+                            <li class="nav-bar__extra-item">
                                 <a href="">Liên hệ</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="search-nav">
-                        <div class="search-box">
-                            <input type="text" name="" id="">
-                            <div class="search-auto" hidden>
-                                <li><span>Quan ao 1</span></li>
-                                <li><span>Quan ao 2</span></li>
-                                <li><span>Quan ao 3</span></li>
-                                <li><span>Quan ao 4</span></li>
-                            </div>
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-right">
-                    <div class="login">
-                        <a href="" class="login-a">Dang nhap</a>
-                    </div>
-                    <div class="cart-icon">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <span>0</span>
-                    </div>
                 </div>
             </div>
-        </header>
-        <div class="nav-bar__extra--content hidden">
-            <div class="nav-bar--overlay"></div>
-            <div class="nav-bar--list">
-                <div class="nav-bar__extra--icon">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <div class="nav-bar__extra--login">Dang nhap</div>
-                <div class="nav-bar__extra--search">
-                    <input type="text" name="" id="">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <div class="nav-bar--list-item">
-                    <ul class="nav-bar__extra-list">
-                        <li class="nav-bar__extra-item">
-                            <a href="">Trang chủ</a>
-                        </li>
-                        <li class="nav-bar__extra-item">
-                            <a href="">Sản phẩm</a>
-                        </li>
-                        <li class="nav-bar__extra-item">
-                            <a href="">Tin mới</a>
-                        </li>
-                        <li class="nav-bar__extra-item nav-bar__extra-item--Notification">
-                            <a href="">Thông báo</a>
-                            <span>100</span>
-                        </li>
-                        <li class="nav-bar__extra-item">
-                            <a href="">Liên hệ</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="slider">
-            <div class="grid wide">
-                <div class="row slides-contents">
-                    <div class="slide-left col l-9 m-12 c-12">
-                        <div class="slide-left--wrap">
-                            <div class="slide-left--content">
-                                <div class="slide-show slide-show--active">
-                                    <img src="https://cf.shopee.vn/file/vn-50009109-ab0334dcab5183ba21903c7df8d7843a_xxhdpi" alt="" class="slide-show--1">
-                                </div>
-                                <!-- <div class="slide-show">
+            <div class="slider">
+                <div class="grid wide">
+                    <div class="row slides-contents">
+                        <div class="slide-left col l-9 m-12 c-12">
+                            <div class="slide-left--wrap">
+                                <div class="slide-left--content">
+                                    <div class="slide-show slide-show--active">
+                                        <img
+                                            src="https://cf.shopee.vn/file/vn-50009109-ab0334dcab5183ba21903c7df8d7843a_xxhdpi"
+                                            alt=""
+                                            class="slide-show--1"
+                                        />
+                                    </div>
+                                    <!-- <div class="slide-show">
                                     <img src="https://cf.shopee.vn/file/vn-50009109-ab0334dcab5183ba21903c7df8d7843a_xxhdpi" alt="" class="slide-show--1">
                                 </div> -->
-                            </div>
-                            <div class="slide-button slide-button--prev" >
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </div>
-                            <div class="slide-button slide-button--next">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </div>
-                            <div class="slide-left--pagination">
-                                <span class="slide-left--pagination-bullet">
-                                    
-                                </span>
-                                <span class="slide-left--pagination-bullet">
-                                    
-                                </span>
-                                <span class="slide-left--pagination-bullet">
-                                    
-                                </span>
-                                <span class="slide-left--pagination-bullet">
-                                    
-                                </span>
-
+                                </div>
+                                <div class="slide-button slide-button--prev">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </div>
+                                <div class="slide-button slide-button--next">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="slide-left--pagination">
+                                    <span class="slide-left--pagination-bullet"> </span>
+                                    <span class="slide-left--pagination-bullet"> </span>
+                                    <span class="slide-left--pagination-bullet"> </span>
+                                    <span class="slide-left--pagination-bullet"> </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="slide-right col l-3 m-12 c-12">
+                        <div class="slide-right col l-3 m-12 c-12">
                             <div class="slide-right--item">
                                 <i class="fa-solid fa-medal"></i>
                                 <div class="slide-right--content">
@@ -185,98 +235,113 @@
                                 <i class="fa-solid fa-truck-fast"></i>
                                 <div class="slide-right--content">
                                     <h3>Giao hàng</h3>
-                                    <p>Miễn phí giao hàng cho đơn trên 1tr </p>
+                                    <p>Miễn phí giao hàng cho đơn trên 1tr</p>
                                 </div>
                             </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="content"></div>
-        <footer class="footer">
-            <div class="grid wide">
-                <div class="row footer--content">
-                    <div class="col l-3 m-4 c-12">
-                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
-                        <ul class="footer-list">
-                            <li class="footer-item">
-                                Địa chỉ: 96A Trần Phú, P. Mộ Lao, Hà Đông, Hà Nội, Việt Nam
-                            </li>
-                            <li class="footer-item">
-                                Điện thoại: <a href="tel:+84  0910201900" class="footer-item__link footer-item__link--Contact">0910201900</a>
-                            </li>
-                            <li class="footer-item">
-                                Gmail: <a href="mailto:shopptit@gmail.com" class="footer-item__link footer-item__link--Contact">shopptit@gmail.com</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Thanh toán</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Chính sách bảo hành</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col l-3 m-4 c-12">
-                        <h3 class="footer__heading">Thanh toán</h3>
-                        <ul class="footer-list">
-                            <li class="footer-item">
-                                Điện thoại: <a href="tel:+84  0910201900" class="footer-item__link">0910201900</a>
-                            </li>
-                            <li class="footer-item">
-                                Gmail: <a href="mailto:shopptit@gmail.com" class="footer-item__link">shopptit@gmail.com</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Thanh toán</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Chính sách bảo hành</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col l-2 m-4 c-12">
-                        <h3 class="footer__heading">Theo dõi</h3>
-                        <ul class="footer-list">
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">
-                                    <i class="fa-brands fa-facebook"></i>
-                                    <span>facebook</span>
-                                </a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">
-                                    <i class="fa-brands fa-youtube"></i>
-                                    <span>Youtube</span>
-                                </a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">
-                                    <i class="fa-brands fa-linkedin"></i>
-                                    <span>LinkedIn</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col l-4 m-12 c-12">
-                        <div class="footer-logo">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.2926376894443!2d105.78743790000001!3d20.9809035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135accdd8a1ad71%3A0xa2f9b16036648187!2zSOG7jWMgdmnhu4duIEPDtG5nIG5naOG7hyBCxrB1IGNow61uaCB2aeG7hW4gdGjDtG5n!5e0!3m2!1svi!2s!4v1678881823080!5m2!1svi!2s" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            <!-- <img src="./assest/images/logo/logo-header.png" alt=""> -->
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer--bottom">
+            <div class="content"></div>
+            <footer class="footer">
                 <div class="grid wide">
-                    <p class="footer--text">© 2023 - Bản quyền thuộc về</p>
-                </div> 
-            </div>
-        </footer>
-    </div>
-</body>
-<script src="./assest/js/testHiddenHeader.js"></script>
+                    <div class="row footer--content">
+                        <div class="col l-3 m-4 c-12">
+                            <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                            <ul class="footer-list">
+                                <li class="footer-item">Địa chỉ: 96A Trần Phú, P. Mộ Lao, Hà Đông, Hà Nội, Việt Nam</li>
+                                <li class="footer-item">
+                                    Điện thoại:
+                                    <a href="tel:+84  0910201900" class="footer-item__link footer-item__link--Contact"
+                                        >0910201900</a
+                                    >
+                                </li>
+                                <li class="footer-item">
+                                    Gmail:
+                                    <a
+                                        href="mailto:shopptit@gmail.com"
+                                        class="footer-item__link footer-item__link--Contact"
+                                        >shopptit@gmail.com</a
+                                    >
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Thanh toán</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Chính sách bảo hành</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-3 m-4 c-12">
+                            <h3 class="footer__heading">Thanh toán</h3>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    Điện thoại: <a href="tel:+84  0910201900" class="footer-item__link">0910201900</a>
+                                </li>
+                                <li class="footer-item">
+                                    Gmail:
+                                    <a href="mailto:shopptit@gmail.com" class="footer-item__link">shopptit@gmail.com</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Thanh toán</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">Chính sách bảo hành</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-2 m-4 c-12">
+                            <h3 class="footer__heading">Theo dõi</h3>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <span>facebook</span>
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        <i class="fa-brands fa-youtube"></i>
+                                        <span>Youtube</span>
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                        <span>LinkedIn</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-4 m-12 c-12">
+                            <div class="footer-logo">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.2926376894443!2d105.78743790000001!3d20.9809035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135accdd8a1ad71%3A0xa2f9b16036648187!2zSOG7jWMgdmnhu4duIEPDtG5nIG5naOG7hyBCxrB1IGNow61uaCB2aeG7hW4gdGjDtG5n!5e0!3m2!1svi!2s!4v1678881823080!5m2!1svi!2s"
+                                    width="800"
+                                    height="400"
+                                    style="border: 0"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                ></iframe>
+                                <!-- <img src="./assest/images/logo/logo-header.png" alt=""> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer--bottom">
+                    <div class="grid wide">
+                        <p class="footer--text">© 2023 - Bản quyền thuộc về</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script src="./assest/js/testHiddenHeader.js"></script>
 </html>

@@ -46,7 +46,7 @@
 </body>
 <script src="./assest/js/login.js"></script>
 <script>
-
+console.log("bat dau")
   Validator({
     form: '#form-1', 
     formGroupSelector:'.form-group',
@@ -61,10 +61,10 @@
         return document.querySelector('#form-1 #password').value ;
       },'Mật khẩu không chính xác vui lòng nhập lại'),
     ],
-    // onSubmit: function(data){
-    //   // Về sau sẽ call API
-    //   console.log(data)
-    // }
+    onSubmit: function(data){
+      // Về sau sẽ call API
+      console.log(data)
+    }
   });
 </script>
 </html>

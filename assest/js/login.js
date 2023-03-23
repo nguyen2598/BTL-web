@@ -1,5 +1,6 @@
+console.log('ket thuc');
 function Validator(options) {
-    console.log(options.ruler);
+    console.log('options', options);
     function getParent(element, selector) {
         while (element.parentElement) {
             if (element.parentElement.matches(selector)) {
