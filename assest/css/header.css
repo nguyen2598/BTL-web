@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 3;
+    z-index: 99;
 }
 .header .wide {
     display: flex;
@@ -58,7 +58,7 @@
 .navbar8 .navbar8-list .navbar8-item.navbar8-item--Notification {
     position: relative;
 }
-/* .navbar8 .navbar8-list .navbar8-item.navbar8-item--Notification span {
+.navbar8 .navbar8-list .navbar8-item.navbar8-item--Notification .Notification--number {
     position: absolute;
     top: -0.9rem;
     right: -0.4rem;
@@ -67,7 +67,7 @@
     padding: 0.1rem 0.2rem;
     color: #fff;
     font-size: 1.2rem;
-} */
+}
 
 .header-center .search-nav {
     padding-bottom: 2rem;
@@ -430,3 +430,4 @@
     font-size: 1.4rem;
     font-weight: 600;
 } 
+
