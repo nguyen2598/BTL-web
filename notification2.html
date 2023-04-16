@@ -1,371 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notification-ShopNha</title>
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-    />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Notification-ShopNha</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
 
-    <link rel="stylesheet" href="./assest/css/root.css" />
-    <link rel="stylesheet" href="./assest/css/reset.css" />
-    <link rel="stylesheet" href="./assest/css/grid.css" />
-    <link rel="stylesheet" href="./assest/css/footer.css">
-    <link rel="stylesheet" href="./assest/css/header.css" />
-    <link rel="stylesheet" href="./assest/css/content-notification.css" />
-</head>
-<body>
-    <div id="app">
-        <header class="header">
-            <div class="grid wide">
-                <div c lass="nav-bar--extra">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <div class="header-left">
-                    <img src="./assest/images/logo/logo-header.png" alt="" />
-                </div>
-                <div class="header-center">
-                    <div class="navbar8">
-                        <ul class="navbar8-list">
-                            <li class="navbar8-item">
-                                <a href="index.html">Trang chủ</a>
-                            </li>
-                            <li class="navbar8-item">
-                                <a href="">Sản phẩm</a>
-                            </li>
-                            <li class="navbar8-item">
-                                <a href="news.html">Tin mới</a>
-                            </li>
-                            <li class="navbar8-item navbar8-item--Notification">
-                                <a href="">Thông báo</a>
-                                <span class="Notification--number">100</span>
-                                <div class="header-notify">
-                                    <header class="header-notify-header">
-                                        <h3>Thông báo mới nhận</h3>
-                                    </header>
-                                    <ul class="header-notify-list">
-                                        <li class="header-notify-item header-notify-item--viewed">
-                                            <a href="" class="header-notify-link">
-                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0K4Elre2yBR9GBr6PeOnYsbJTJp8pjRDrYCykyxIbA8h0yUGCVuzSOeWyGOhB6C_TPXQ&usqp=CAU" alt="" class="header-notify-img">
-                                                <div class="header-notify-info">
-                                                    <span class="header-notify-name">Áo thun kiểu dáng basic chất vải cao cấp</span>
-                                                    <span class="header-notify-desc">Áo thun tay lỡ form dáng rộng - chất liệu vải cotton 2 chiều</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li class="header-notify-item header-notify-item--viewed">
-                                            <a href="" class="header-notify-link">
-                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0K4Elre2yBR9GBr6PeOnYsbJTJp8pjRDrYCykyxIbA8h0yUGCVuzSOeWyGOhB6C_TPXQ&usqp=CAU" alt="" class="header-notify-img">
-                                                <div class="header-notify-info">
-                                                    <span class="header-notify-name">Áo thun kiểu dáng basic chất vải cao cấp</span>
-                                                    <span class="header-notify-desc">Áo thun tay lỡ form dáng rộng - chất liệu vải cotton 2 chiều</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                        <li class="header-notify-item header-notify-item--viewed">
-                                            <a href="" class="header-notify-link">
-                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0K4Elre2yBR9GBr6PeOnYsbJTJp8pjRDrYCykyxIbA8h0yUGCVuzSOeWyGOhB6C_TPXQ&usqp=CAU" alt="" class="header-notify-img">
-                                                <div class="header-notify-info">
-                                                    <span class="header-notify-name">Áo thun kiểu dáng basic chất vải cao cấp</span>
-                                                    <span class="header-notify-desc">Áo thun tay lỡ form dáng rộng - chất liệu vải cotton 2 chiều</span>
-                                                </div>
-                                            </a>
-                                        </li>
-
-                                    </ul>
-                                    <footer class="header-notify-footer">
-                                        <p class="header-notify-footer-btn">Xem tất cả</p>
-                                    </footer>
-                                </div>
-                            </li>
-                            <li class="navbar8-item">
-                                <a href="contact.html">Liên hệ</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="search-nav">
-                        <div class="search-box">
-                            <input type="text" name="" id="" />
-                            <div class="search-auto" hidden>
-                                <li><span>Quan ao 1</span></li>
-                                <li><span>Quan ao 2</span></li>
-                                <li><span>Quan ao 3</span></li>
-                                <li><span>Quan ao 4</span></li>
-                            </div>
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-right">
-                    <div class="login">
-                        <a href="" class="login-a">Dang nhap</a>
-                    </div>
-                    <div class="cart-icon">
-                        <a href="">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </a>
-                        <span>0</span>
-                        <!-- /* Ngay  18/3/2023*/ -->
-                        <div class="cart-header--product">
-                            <h3 class="cart-header-product__heading">Sản phẩm mới thêm</h3>
-                            <ul class="cart-header-product__list">
-                                <!-- lấy từ database nên xóa -->
-                                <li class="cart-header-product__item">
-                                    <div class="cart-header-product__item--img">
-                                        <img
-                                            src="https://down-vn.img.susercontent.com/file/f4ede74431bd59fab463b6003e0efbde_tn"
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div class="cart-header-product__item--content">
-                                        op dien thoai in hinh onepiece 12promax sieu chat luong 12promax sieu chat
-                                        luong
-                                    </div>
-                                    <div class="cart-header-product__item--price">1200000d</div>
-                                </li>
-                                <li class="cart-header-product__item">
-                                    <div class="cart-header-product__item--img">
-                                        <img
-                                            src="https://down-vn.img.susercontent.com/file/f4ede74431bd59fab463b6003e0efbde_tn"
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div class="cart-header-product__item--content">
-                                        op dien thoai in hinh onepiece 12promax sieu chat luong 12promax sieu chat
-                                        luong
-                                    </div>
-                                    <div class="cart-header-product__item--price">1200000d</div>
-                                </li>
-                                <li class="cart-header-product__item">
-                                    <div class="cart-header-product__item--img">
-                                        <img
-                                            src="https://down-vn.img.susercontent.com/file/f4ede74431bd59fab463b6003e0efbde_tn"
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div class="cart-header-product__item--content">
-                                        op dien thoai in hinh onepiece 12promax sieu chat luong 12promax sieu chat
-                                        luong
-                                    </div>
-                                    <div class="cart-header-product__item--price">1200000d</div>
-                                </li>
-                                <li class="cart-header-product__item">
-                                    <div class="cart-header-product__item--img">
-                                        <img
-                                            src="https://down-vn.img.susercontent.com/file/f4ede74431bd59fab463b6003e0efbde_tn"
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div class="cart-header-product__item--content">
-                                        op dien thoai in hinh onepiece 12promax luong
-                                    </div>
-                                    <div class="cart-header-product__item--price">1200000d</div>
-                                </li>
-                                <li class="cart-header-product__item">
-                                    <div class="cart-header-product__item--img">
-                                        <img
-                                            src="https://down-vn.img.susercontent.com/file/f4ede74431bd59fab463b6003e0efbde_tn"
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div class="cart-header-product__item--content">sieu chat luong 12pro</div>
-                                    <div class="cart-header-product__item--price">1200000d</div>
-                                </li>
-                                <!-- Lấy từ database nên xóa -->
-                            </ul>
-                            <a href="cart.html">
-                                <button class="cart-header-product__btn">Xem tất cả</button>
-                            </a>
-                        </div>
-                        <!-- /* Ngay  18/3/2023*/ -->
-                    </div>
-                </div>
-            </div>
-        </header>
-        <div class="content">
-            <div class="content-nav">
-                <div class="content-order">
-                    <a href="notification1.html"><span>Cập nhật đơn hàng</span></a>
-                </div>
-                <div class="content-sale">
-                    <a href=""><span>Khuyến mãi</span></a>
-                </div>
-            </div>
-            <div class="content-notify">
-                <content class="content-notify-header">
-                    <a href=""><h3>Đánh dấu đã đọc tất cả</h3></a>
-                </content>
-                <ul class="content-notify-list">
-                    <li class="content-notify-item">
-                        <a href="" class="content-notify-link">
-                            <img src="https://gocnhocuachi.com/wp-content/uploads/2022/05/ShopeeMyadsMOST241401-1636947317.jpeg" alt="" class="content-notify-img">
-                            <div class="content-notify-info">
-                                <span class="content-notify-status">CUỐI TUẦN RINH XU VỀ NHÀ</span>
-                                <span class="content-notify-desc">Sale 50% áo thun, vali, đồng hồ, giày. Voucher 200k cực sốc, cùng săn đep, săn deal đỉnh</span>
-                                <span class="content-notify-time">17:16 07-04-2023</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="content-notify-item">
-                        <a href="" class="content-notify-link">
-                            <img src="https://gocnhocuachi.com/wp-content/uploads/2022/05/ShopeeMyadsMOST241401-1636947317.jpeg" alt="" class="content-notify-img">
-                            <div class="content-notify-info">
-                                <span class="content-notify-status">CUỐI TUẦN RINH XU VỀ NHÀ</span>
-                                <span class="content-notify-desc">Sale 50% áo thun, vali, đồng hồ, giày. Voucher 200k cực sốc, cùng săn đep, săn deal đỉnh</span>
-                                <span class="content-notify-time">17:16 07-04-2023</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="content-notify-item">
-                        <a href="" class="content-notify-link">
-                            <img src="https://gocnhocuachi.com/wp-content/uploads/2022/05/ShopeeMyadsMOST241401-1636947317.jpeg" alt="" class="content-notify-img">
-                            <div class="content-notify-info">
-                                <span class="content-notify-status">CUỐI TUẦN RINH XU VỀ NHÀ</span>
-                                <span class="content-notify-desc">Sale 50% áo thun, vali, đồng hồ, giày. Voucher 200k cực sốc, cùng săn đep, săn deal đỉnh</span>
-                                <span class="content-notify-time">17:16 07-04-2023</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="content-notify-item">
-                        <a href="" class="content-notify-link">
-                            <img src="https://gocnhocuachi.com/wp-content/uploads/2022/05/ShopeeMyadsMOST241401-1636947317.jpeg" alt="" class="content-notify-img">
-                            <div class="content-notify-info">
-                                <span class="content-notify-status">CUỐI TUẦN RINH XU VỀ NHÀ</span>
-                                <span class="content-notify-desc">Sale 50% áo thun, vali, đồng hồ, giày. Voucher 200k cực sốc, cùng săn đep, săn deal đỉnh</span>
-                                <span class="content-notify-time">17:16 07-04-2023</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="content-notify-item">
-                        <a href="" class="content-notify-link">
-                            <img src="https://gocnhocuachi.com/wp-content/uploads/2022/05/ShopeeMyadsMOST241401-1636947317.jpeg" alt="" class="content-notify-img">
-                            <div class="content-notify-info">
-                                <span class="content-notify-status">CUỐI TUẦN RINH XU VỀ NHÀ</span>
-                                <span class="content-notify-desc">Sale 50% áo thun, vali, đồng hồ, giày. Voucher 200k cực sốc, cùng săn đep, săn deal đỉnh</span>
-                                <span class="content-notify-time">17:16 07-04-2023</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="content-notify-item">
-                        <a href="" class="content-notify-link">
-                            <img src="https://gocnhocuachi.com/wp-content/uploads/2022/05/ShopeeMyadsMOST241401-1636947317.jpeg" alt="" class="content-notify-img">
-                            <div class="content-notify-info">
-                                <span class="content-notify-status">CUỐI TUẦN RINH XU VỀ NHÀ</span>
-                                <span class="content-notify-desc">Sale 50% áo thun, vali, đồng hồ, giày. Voucher 200k cực sốc, cùng săn đep, săn deal đỉnh</span>
-                                <span class="content-notify-time">17:16 07-04-2023</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <footer class="footer">
+        <link rel="stylesheet" href="./assest/css/root.css" />
+        <link rel="stylesheet" href="./assest/css/reset.css" />
+        <link rel="stylesheet" href="./assest/css/grid.css" />
+        <link rel="stylesheet" href="./assest/css/footer.css" />
+        <link rel="stylesheet" href="./assest/css/header.css" />
+        <link rel="stylesheet" href="./assest/css/content-notification.css" />
+    </head>
+    <body>
+        <div id="app">
+            <header class="header">
                 <div class="grid wide">
-                    <div class="row footer--content">
-                        <div class="col l-3 m-4 c-12">
-                            <h3 class="footer__heading">Chăm sóc khách hàng</h3>
-                            <ul class="footer-list">
-                                <li class="footer-item">Địa chỉ: 96A Trần Phú, P. Mộ Lao, Hà Đông, Hà Nội, Việt Nam</li>
-                                <li class="footer-item">
-                                    Điện thoại:
-                                    <a href="tel:+84  0910201900" class="footer-item__link footer-item__link--Contact"
-                                        >0910201900</a
-                                    >
+                    <div class="nav-bar--extra">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="header-left">
+                        <img src="./assest/images/logo/logo-header.png" alt="" />
+                    </div>
+                    <div class="header-center">
+                        <div class="navbar8">
+                            <ul class="navbar8-list">
+                                <li class="navbar8-item">
+                                    <a href="index.html">Trang chủ</a>
                                 </li>
-                                <li class="footer-item">
-                                    Gmail:
-                                    <a
-                                        href="mailto:shopptit@gmail.com"
-                                        class="footer-item__link footer-item__link--Contact"
-                                        >shopptit@gmail.com</a
-                                    >
+                                <!-- <li class="navbar8-item">
+                                    <a href="">Sản phẩm</a>
+                                </li> -->
+                                <li class="navbar8-item">
+                                    <a href="news.html">Tin mới</a>
                                 </li>
-                                <li class="footer-item">
-                                    <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+                                <li class="navbar8-item navbar8-item--Notification">
+                                    <a href="">Thông báo</a>
+                                    <span class="Notification--number">100</span>
+                                    <div class="header-notify">
+                                        <header class="header-notify-header">
+                                            <h3>Thông báo mới nhận</h3>
+                                        </header>
+                                        <ul class="header-notify-list">
+                                            <li class="header-notify-item header-notify-item--viewed">
+                                                <a href="" class="header-notify-link">
+                                                    <img
+                                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0K4Elre2yBR9GBr6PeOnYsbJTJp8pjRDrYCykyxIbA8h0yUGCVuzSOeWyGOhB6C_TPXQ&usqp=CAU"
+                                                        alt=""
+                                                        class="header-notify-img"
+                                                    />
+                                                    <div class="header-notify-info">
+                                                        <span class="header-notify-name"
+                                                            >Áo thun kiểu dáng basic chất vải cao cấp</span
+                                                        >
+                                                        <span class="header-notify-desc"
+                                                            >Áo thun tay lỡ form dáng rộng - chất liệu vải cotton 2
+                                                            chiều</span
+                                                        >
+                                                    </div>
+                                                </a>
+                                            </li>
+
+                                            <li class="header-notify-item header-notify-item--viewed">
+                                                <a href="" class="header-notify-link">
+                                                    <img
+                                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0K4Elre2yBR9GBr6PeOnYsbJTJp8pjRDrYCykyxIbA8h0yUGCVuzSOeWyGOhB6C_TPXQ&usqp=CAU"
+                                                        alt=""
+                                                        class="header-notify-img"
+                                                    />
+                                                    <div class="header-notify-info">
+                                                        <span class="header-notify-name"
+                                                            >Áo thun kiểu dáng basic chất vải cao cấp</span
+                                                        >
+                                                        <span class="header-notify-desc"
+                                                            >Áo thun tay lỡ form dáng rộng - chất liệu vải cotton 2
+                                                            chiều</span
+                                                        >
+                                                    </div>
+                                                </a>
+                                            </li>
+
+                                            <li class="header-notify-item header-notify-item--viewed">
+                                                <a href="" class="header-notify-link">
+                                                    <img
+                                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0K4Elre2yBR9GBr6PeOnYsbJTJp8pjRDrYCykyxIbA8h0yUGCVuzSOeWyGOhB6C_TPXQ&usqp=CAU"
+                                                        alt=""
+                                                        class="header-notify-img"
+                                                    />
+                                                    <div class="header-notify-info">
+                                                        <span class="header-notify-name"
+                                                            >Áo thun kiểu dáng basic chất vải cao cấp</span
+                                                        >
+                                                        <span class="header-notify-desc"
+                                                            >Áo thun tay lỡ form dáng rộng - chất liệu vải cotton 2
+                                                            chiều</span
+                                                        >
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <footer class="header-notify-footer">
+                                            <p class="header-notify-footer-btn">Xem tất cả</p>
+                                        </footer>
+                                    </div>
                                 </li>
-                                <li class="footer-item">
-                                    <a href="" class="footer-item__link">Thanh toán</a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="" class="footer-item__link">Chính sách bảo hành</a>
+                                <li class="navbar8-item">
+                                    <a href="contact.html">Liên hệ</a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="col l-3 m-4 c-12">
-                            <h3 class="footer__heading">Thanh toán</h3>
-                            <ul class="footer-list">
-                                <li class="footer-item">
-                                    Điện thoại: <a href="tel:+84  0910201900" class="footer-item__link">0910201900</a>
-                                </li>
-                                <li class="footer-item">
-                                    Gmail:
-                                    <a href="mailto:shopptit@gmail.com" class="footer-item__link">shopptit@gmail.com</a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="" class="footer-item__link">Thanh toán</a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="" class="footer-item__link">Chính sách bảo hành</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col l-2 m-4 c-12">
-                            <h3 class="footer__heading">Theo dõi</h3>
-                            <ul class="footer-list">
-                                <li class="footer-item">
-                                    <a href="" class="footer-item__link">
-                                        <i class="fa-brands fa-facebook"></i>
-                                        <span>facebook</span>
-                                    </a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="" class="footer-item__link">
-                                        <i class="fa-brands fa-youtube"></i>
-                                        <span>Youtube</span>
-                                    </a>
-                                </li>
-                                <li class="footer-item">
-                                    <a href="" class="footer-item__link">
-                                        <i class="fa-brands fa-linkedin"></i>
-                                        <span>LinkedIn</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col l-4 m-12 c-12">
-                            <div class="footer-logo">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.2926376894443!2d105.78743790000001!3d20.9809035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135accdd8a1ad71%3A0xa2f9b16036648187!2zSOG7jWMgdmnhu4duIEPDtG5nIG5naOG7hyBCxrB1IGNow61uaCB2aeG7hW4gdGjDtG5n!5e0!3m2!1svi!2s!4v1678881823080!5m2!1svi!2s"
-                                    width="800"
-                                    height="400"
-                                    style="border: 0"
-                                    allowfullscreen=""
-                                    loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"
-                                ></iframe>
+                        <div class="search-nav">
+                            <div class="search-box">
+                                <input type="text" name="" id="" />
+                                <div class="search-auto" hidden>
+                                    <li><span>Quan ao 1</span></li>
+                                    <li><span>Quan ao 2</span></li>
+                                    <li><span>Quan ao 3</span></li>
+                                    <li><span>Quan ao 4</span></li>
+                                </div>
+                                <i class="fa-solid fa-magnifying-glass"></i>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="footer--bottom">
-                    <div class="grid wide">
-                        <p class="footer--text">© 2023 - Bản quyền thuộc về</p>
+                    <div class="header-right">
+                        <div class="login login-suss">
+                            <span class="login-name">Nguyễn Văn A</span>
+                            <div class="login-profile">
+                                <a href="./admin.html" class="profile-a">trang cá nhân</a>
+                                <span class="logout">Đăng xuất</span>
+                            </div>
+                        </div>
+                        <div class="cart-icon">
+                            <a href="">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                            <span>0</span>
+                            <!-- /* Ngay  18/3/2023*/ -->
+                            <div class="cart-header--product">
+                                <h3 class="cart-header-product__heading">Sản phẩm mới thêm</h3>
+                                <ul class="cart-header-product__list">
+                                    <!-- lấy từ database nên xóa -->
+                                    <li class="cart-header-product__item">
+                                        <div class="cart-header-product__item--img">
+                                            <img
+                                                src="https://down-vn.img.susercontent.com/file/f4ede74431bd59fab463b6003e0efbde_tn"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="cart-header-product__item--content">
+                                            op dien thoai in hinh onepiece 12promax sieu chat luong 12promax sieu chat
+                                            luong
+                                        </div>
+                                        <div class="cart-header-product__item--price">1200000d</div>
+                                    </li>
+                                    <li class="cart-header-product__item">
+                                        <div class="cart-header-product__item--img">
+                                            <img
+                                                src="https://down-vn.img.susercontent.com/file/f4ede74431bd59fab463b6003e0efbde_tn"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="cart-header-product__item--content">
+                                            op dien thoai in hinh onepiece 12promax sieu chat luong 12promax sieu chat
+                                            luong
+                                        </div>
+                                        <div class="cart-header-product__item--price">1200000d</div>
+                                    </li>
+                                    <li class="cart-header-product__item">
+                                        <div class="cart-header-product__item--img">
+                                            <img
+                                                src="https://down-vn.img.susercontent.com/file/f4ede74431bd59fab463b6003e0efbde_tn"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="cart-header-product__item--content">
+                                            op dien thoai in hinh onepiece 12promax sieu chat luong 12promax sieu chat
+                                            luong
+                                        </div>
+                                        <div class="cart-header-product__item--price">1200000d</div>
+                                    </li>
+                                    <li class="cart-header-product__item">
+                                        <div class="cart-header-product__item--img">
+                                            <img
+                                                src="https://down-vn.img.susercontent.com/file/f4ede74431bd59fab463b6003e0efbde_tn"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="cart-header-product__item--content">
+                                            op dien thoai in hinh onepiece 12promax luong
+                                        </div>
+                                        <div class="cart-header-product__item--price">1200000d</div>
+                                    </li>
+                                    <li class="cart-header-product__item">
+                                        <div class="cart-header-product__item--img">
+                                            <img
+                                                src="https://down-vn.img.susercontent.com/file/f4ede74431bd59fab463b6003e0efbde_tn"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="cart-header-product__item--content">sieu chat luong 12pro</div>
+                                        <div class="cart-header-product__item--price">1200000d</div>
+                                    </li>
+                                    <!-- Lấy từ database nên xóa -->
+                                </ul>
+                                <a href="cart.html">
+                                    <button class="cart-header-product__btn">Xem tất cả</button>
+                                </a>
+                            </div>
+                            <!-- /* Ngay  18/3/2023*/ -->
+                        </div>
                     </div>
                 </div>
-            </footer>
+            </header>
+            <div class="content">
+                <div class="content-nav">
+                    <div class="content-order">
+                        <a href="notification1.html"><span>Cập nhật đơn hàng</span></a>
+                    </div>
+                    <div class="content-sale">
+                        <a href=""><span>Khuyến mãi</span></a>
+                    </div>
+                </div>
+                <div class="content-notify">
+                    <content class="content-notify-header">
+                        <a href=""><h3>Đánh dấu đã đọc tất cả</h3></a>
+                    </content>
+                    <ul class="content-notify-list">
+                        <li class="content-notify-item">
+                            <a href="" class="content-notify-link">
+                                <img
+                                    src="https://gocnhocuachi.com/wp-content/uploads/2022/05/ShopeeMyadsMOST241401-1636947317.jpeg"
+                                    alt=""
+                                    class="content-notify-img"
+                                />
+                                <div class="content-notify-info">
+                                    <span class="content-notify-status">CUỐI TUẦN RINH XU VỀ NHÀ</span>
+                                    <span class="content-notify-desc"
+                                        >Sale 50% áo thun, vali, đồng hồ, giày. Voucher 200k cực sốc, cùng săn đep, săn
+                                        deal đỉnh</span
+                                    >
+                                    <span class="content-notify-time">17:16 07-04-2023</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="content-notify-item">
+                            <a href="" class="content-notify-link">
+                                <img
+                                    src="https://gocnhocuachi.com/wp-content/uploads/2022/05/ShopeeMyadsMOST241401-1636947317.jpeg"
+                                    alt=""
+                                    class="content-notify-img"
+                                />
+                                <div class="content-notify-info">
+                                    <span class="content-notify-status">CUỐI TUẦN RINH XU VỀ NHÀ</span>
+                                    <span class="content-notify-desc"
+                                        >Sale 50% áo thun, vali, đồng hồ, giày. Voucher 200k cực sốc, cùng săn đep, săn
+                                        deal đỉnh</span
+                                    >
+                                    <span class="content-notify-time">17:16 07-04-2023</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="content-notify-item">
+                            <a href="" class="content-notify-link">
+                                <img
+                                    src="https://gocnhocuachi.com/wp-content/uploads/2022/05/ShopeeMyadsMOST241401-1636947317.jpeg"
+                                    alt=""
+                                    class="content-notify-img"
+                                />
+                                <div class="content-notify-info">
+                                    <span class="content-notify-status">CUỐI TUẦN RINH XU VỀ NHÀ</span>
+                                    <span class="content-notify-desc"
+                                        >Sale 50% áo thun, vali, đồng hồ, giày. Voucher 200k cực sốc, cùng săn đep, săn
+                                        deal đỉnh</span
+                                    >
+                                    <span class="content-notify-time">17:16 07-04-2023</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="content-notify-item">
+                            <a href="" class="content-notify-link">
+                                <img
+                                    src="https://gocnhocuachi.com/wp-content/uploads/2022/05/ShopeeMyadsMOST241401-1636947317.jpeg"
+                                    alt=""
+                                    class="content-notify-img"
+                                />
+                                <div class="content-notify-info">
+                                    <span class="content-notify-status">CUỐI TUẦN RINH XU VỀ NHÀ</span>
+                                    <span class="content-notify-desc"
+                                        >Sale 50% áo thun, vali, đồng hồ, giày. Voucher 200k cực sốc, cùng săn đep, săn
+                                        deal đỉnh</span
+                                    >
+                                    <span class="content-notify-time">17:16 07-04-2023</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="content-notify-item">
+                            <a href="" class="content-notify-link">
+                                <img
+                                    src="https://gocnhocuachi.com/wp-content/uploads/2022/05/ShopeeMyadsMOST241401-1636947317.jpeg"
+                                    alt=""
+                                    class="content-notify-img"
+                                />
+                                <div class="content-notify-info">
+                                    <span class="content-notify-status">CUỐI TUẦN RINH XU VỀ NHÀ</span>
+                                    <span class="content-notify-desc"
+                                        >Sale 50% áo thun, vali, đồng hồ, giày. Voucher 200k cực sốc, cùng săn đep, săn
+                                        deal đỉnh</span
+                                    >
+                                    <span class="content-notify-time">17:16 07-04-2023</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="content-notify-item">
+                            <a href="" class="content-notify-link">
+                                <img
+                                    src="https://gocnhocuachi.com/wp-content/uploads/2022/05/ShopeeMyadsMOST241401-1636947317.jpeg"
+                                    alt=""
+                                    class="content-notify-img"
+                                />
+                                <div class="content-notify-info">
+                                    <span class="content-notify-status">CUỐI TUẦN RINH XU VỀ NHÀ</span>
+                                    <span class="content-notify-desc"
+                                        >Sale 50% áo thun, vali, đồng hồ, giày. Voucher 200k cực sốc, cùng săn đep, săn
+                                        deal đỉnh</span
+                                    >
+                                    <span class="content-notify-time">17:16 07-04-2023</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <footer class="footer">
+                    <div class="grid wide">
+                        <div class="row footer--content">
+                            <div class="col l-3 m-4 c-12">
+                                <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                                <ul class="footer-list">
+                                    <li class="footer-item">
+                                        Địa chỉ: 96A Trần Phú, P. Mộ Lao, Hà Đông, Hà Nội, Việt Nam
+                                    </li>
+                                    <li class="footer-item">
+                                        Điện thoại:
+                                        <a
+                                            href="tel:+84  0910201900"
+                                            class="footer-item__link footer-item__link--Contact"
+                                            >0910201900</a
+                                        >
+                                    </li>
+                                    <li class="footer-item">
+                                        Gmail:
+                                        <a
+                                            href="mailto:shopptit@gmail.com"
+                                            class="footer-item__link footer-item__link--Contact"
+                                            >shopptit@gmail.com</a
+                                        >
+                                    </li>
+                                    <li class="footer-item">
+                                        <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a href="" class="footer-item__link">Thanh toán</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a href="" class="footer-item__link">Chính sách bảo hành</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col l-3 m-4 c-12">
+                                <h3 class="footer__heading">Thanh toán</h3>
+                                <ul class="footer-list">
+                                    <li class="footer-item">
+                                        Điện thoại:
+                                        <a href="tel:+84  0910201900" class="footer-item__link">0910201900</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        Gmail:
+                                        <a href="mailto:shopptit@gmail.com" class="footer-item__link"
+                                            >shopptit@gmail.com</a
+                                        >
+                                    </li>
+                                    <li class="footer-item">
+                                        <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a href="" class="footer-item__link">Thanh toán</a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a href="" class="footer-item__link">Chính sách bảo hành</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col l-2 m-4 c-12">
+                                <h3 class="footer__heading">Theo dõi</h3>
+                                <ul class="footer-list">
+                                    <li class="footer-item">
+                                        <a href="" class="footer-item__link">
+                                            <i class="fa-brands fa-facebook"></i>
+                                            <span>facebook</span>
+                                        </a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a href="" class="footer-item__link">
+                                            <i class="fa-brands fa-youtube"></i>
+                                            <span>Youtube</span>
+                                        </a>
+                                    </li>
+                                    <li class="footer-item">
+                                        <a href="" class="footer-item__link">
+                                            <i class="fa-brands fa-linkedin"></i>
+                                            <span>LinkedIn</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col l-4 m-12 c-12">
+                                <div class="footer-logo">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.2926376894443!2d105.78743790000001!3d20.9809035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135accdd8a1ad71%3A0xa2f9b16036648187!2zSOG7jWMgdmnhu4duIEPDtG5nIG5naOG7hyBCxrB1IGNow61uaCB2aeG7hW4gdGjDtG5n!5e0!3m2!1svi!2s!4v1678881823080!5m2!1svi!2s"
+                                        width="800"
+                                        height="400"
+                                        style="border: 0"
+                                        allowfullscreen=""
+                                        loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"
+                                    ></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer--bottom">
+                        <div class="grid wide">
+                            <p class="footer--text">© 2023 - Bản quyền thuộc về</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
         </div>
-    </div>
-</body>
-<script src="./assest/js/testHiddenHeader.js"></script>
+    </body>
+    <script src="./assest/js/testHiddenHeader.js"></script>
 </html>
