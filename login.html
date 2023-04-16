@@ -43,14 +43,11 @@ console.log("bat dau")
     formGroupSelector:'.form-group',
     errorSelector:'.form-message',
     ruler:[
-      Validator.isRequired('#fullname','Vui lòng nhập tên'),
+
       Validator.isRequired('#email','Vui lòng nhập email'),//
       Validator.isEmail('#email','Email sai vui lòng nhập lại'),
       Validator.minLength ('#password',6),
-      Validator.isRequired('#password_confirmation','Vui lòng nhập mật khẩu'),
-      Validator.isConfirmed ('#password_confirmation',function(){
-        return document.querySelector('#form2 #password').value ;
-      },'Mật khẩu không chính xác vui lòng nhập lại'),
+     
     ],
     onSubmit: function(data){
       // Về sau sẽ call API
