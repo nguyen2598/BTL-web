@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="./assest/css/grid.css" />
         <link rel="stylesheet" href="./assest/css/footer.css" />
         <link rel="stylesheet" href="./assest/css/news.css" />
+        <link rel="stylesheet" href="./assest/css/create-news.css" />
     </head>
     <body>
         <div id="app">
@@ -222,160 +223,41 @@
             </header>
             <div class="content">
                 <div class="news clearfix">
-                    <div class="content-news1">
-                        <div class="recommend-news">
-                            <div class="date-news">
-                                <span class="post-date-day">10</span>
-                                <br />
-                                <span class="post-date-month">Th4</span>
+                    <div class="Create-newss hidden">
+                        <div class="overlay-news"></div>
+                        <div class="content-create-news">
+                            <div class="form-news">
+                                <div class="news-group">
+                                    <label for="news-date">Ngày</label>
+                                    <input type="date" id="news-date" />
+                                </div>
+                                <div class="news-group">
+                                    <label for="news-image">Ảnh</label>
+                                    <input type="text" id="news-image" placeholder="đường dẫn ảnh" />
+                                </div>
+                                <div class="news-group">
+                                    <label for="news-title">Tiêu đề</label>
+                                    <input type="text" id="news-title" placeholder="Nhập tiêu đề" />
+                                </div>
+                                <div class="news-group">
+                                    <label for="news-desc">Mô tả</label>
+                                    <textarea type="text" id="news-desc" cols="30" rows="6"></textarea>
+                                </div>
+                                <div id="Create-new1">
+                                    <button>Tạo mới</button>
+                                </div>
                             </div>
-                            <a href="news-article1.html"
-                                ><img
-                                    src="https://linhvnxk.com/wp-content/uploads/2020/08/chat-lieu-vai-768x558.jpg"
-                                    alt=""
-                            /></a>
-                            <a href="news-article1.html"
-                                ><h4>
-                                    Ưu nhược điểm chất liệu vải Cotton, Polyester và Nilon trong thời trang cao cấp
-                                </h4></a
-                            >
-                            <a href="news-article1.html"
-                                ><p>
-                                    Bạn nghe nói chất liệu cotton mặc mát, mặc chất polyester thì nóng bí và đánh đồng
-                                    polyester giống nilon. Vậy đâu mới là thông tin chính xác?
-                                </p></a
-                            >
-                        </div>
-                        <div class="recommend-news">
-                            <div class="date-news">
-                                <span class="post-date-day">10</span>
-                                <br />
-                                <span class="post-date-month">Th4</span>
-                            </div>
-                            <a href="news-article2.html"
-                                ><img
-                                    src="https://linhvnxk.com/wp-content/uploads/2020/07/1364775_Wigan-exterior-press-2-768x483.jpg"
-                                    alt=""
-                            /></a>
-                            <a href="news-article2.html"><h4>Chính sách đổi trả hàng của Smatha</h4></a>
-                            <a href="news-article2.html"
-                                ><p>
-                                    Chính sách đổi trả như thế nào, bỏa hành ra sao, chế độ hậu mãi, ưu đãi thế nào? Vậy
-                                    hãy tìm hiểu chế độ đổi hàng ở Smatha như thế nào nhé!
-                                </p></a
-                            >
-                        </div>
-                        <div class="recommend-news">
-                            <div class="date-news">
-                                <span class="post-date-day">10</span>
-                                <br />
-                                <span class="post-date-month">Th4</span>
-                            </div>
-                            <a href="news-article3.html"
-                                ><img
-                                    src="https://linhvnxk.com/wp-content/uploads/2018/11/ao-so-mi-cuoi-nam-xuat-khau-mau-hong.jpg"
-                                    alt=""
-                            /></a>
-                            <a href="news-article3.html"><h4>Cách chọn mua áo sơ mi nam xuất khẩu</h4></a>
-                            <a href="news-article3.html"
-                                ><p>
-                                    Như chọn mọi loại sơ mi khác, để chọn áo sơ mi nam xuất khẩu ưng ý bạn cũng có những
-                                    nguyên tắc cơ bản cần biết?
-                                </p></a
-                            >
-                        </div>
-                        <div class="recommend-news">
-                            <div class="date-news">
-                                <span class="post-date-day">10</span>
-                                <br />
-                                <span class="post-date-month">Th4</span>
-                            </div>
-                            <a href="news-article4.html"
-                                ><img
-                                    src="https://linhvnxk.com/wp-content/uploads/2018/11/quan-kaki-nam-xuat-khau-giordano-gan-mau-da-bo2.jpg"
-                                    alt=""
-                            /></a>
-                            <a href="news-article4.html"><h4>Quần áo nam xuất khẩu- bạn chọn loại nào?</h4></a>
-                            <a href="news-article4.html"
-                                ><p>
-                                    Quần áo nam xuất khẩu đã quá phổ biến. Tuy nhiên ở những bài trước ta cũng đã biết
-                                    có rất nhiều loại, hàng cảng, hàng chuyền, hàng nhái…. Bạn chọn hàng nào?
-                                </p></a
-                            >
-                        </div>
-                        <div class="recommend-news">
-                            <div class="date-news">
-                                <span class="post-date-day">10</span>
-                                <br />
-                                <span class="post-date-month">Th4</span>
-                            </div>
-                            <a href="news-article5.html"
-                                ><img
-                                    src="https://linhvnxk.com/wp-content/uploads/2018/09/big-collection-of-chinos-for-men-ozdsbkc-.jpg"
-                                    alt=""
-                            /></a>
-                            <a href="news-article5.html"
-                                ><h4>Quần kaki nam xuất khẩu như thế nào thì hợp với bạn?</h4></a
-                            >
-                            <a href="news-article5.html"
-                                ><p>
-                                    Quần kaki nam xuất khẩu có lẽ là loại quần dễ mua, dễ mặc, dễ phối hợp nhất cho nam
-                                    giới.
-                                </p></a
-                            >
                         </div>
                     </div>
+                    <div class="content-news1"></div>
                     <div class="content-news2">
                         <div class="trend-news">
                             <h5>BÀI VIẾT MỚI</h5>
-                            <div class="blog-post">
-                                <img
-                                    src="https://linhvnxk.com/wp-content/uploads/2020/08/chat-lieu-vai-768x558.jpg"
-                                    alt=""
-                                />
-                                <a href="news-article1.html"
-                                    ><p>
-                                        Ưu nhược điểm chất liệu vải Cotton, Polyester và Nilon trong thời trang cao cấp
-                                    </p></a
-                                >
-                            </div>
-                            <div class="blog-post">
-                                <img
-                                    src="https://linhvnxk.com/wp-content/uploads/2020/07/1364775_Wigan-exterior-press-2-768x483.jpg"
-                                    alt=""
-                                />
-                                <a href="news-article2.html"><p>Chính sách đổi trả hàng của Smatha</p></a>
-                            </div>
-                            <div class="blog-post">
-                                <img
-                                    src="https://linhvnxk.com/wp-content/uploads/2018/11/ao-so-mi-cuoi-nam-xuat-khau-mau-hong.jpg"
-                                    alt=""
-                                />
-                                <a href="news-article3.html"><p>Cách chọn mua áo sơ mi nam xuất khẩu</p></a>
-                            </div>
-                            <div class="blog-post">
-                                <img
-                                    src="https://linhvnxk.com/wp-content/uploads/2018/11/quan-kaki-nam-xuat-khau-giordano-gan-mau-da-bo2.jpg"
-                                    alt=""
-                                />
-                                <a href="news-article4.html"><p>Quần áo nam xuất khẩu- bạn chọn loại nào?</p></a>
-                            </div>
-                            <div class="blog-post">
-                                <img
-                                    src="https://linhvnxk.com/wp-content/uploads/2018/09/big-collection-of-chinos-for-men-ozdsbkc-.jpg"
-                                    alt=""
-                                />
-                                <a href="news-article5.html"
-                                    ><p>
-                                        Quần kaki nam xuất khẩu có lẽ là loại quần dễ mua, dễ mặc, dễ phối hợp nhất cho
-                                        nam giới.
-                                    </p></a
-                                >
-                            </div>
+                            <div class="news2-content"></div>
                         </div>
                     </div>
                 </div>
-
+                <div class="create-newpp">Tạo bài viết mới</div>
                 <footer class="footer">
                     <div class="grid wide">
                         <div class="row footer--content">
@@ -483,5 +365,7 @@
             </div>
         </div>
     </body>
-    <script src="./assest/js/testHiddenHeader.js"></script>
+    <!-- <script src="./assest/js/testHiddenHeader.js"></script> -->
+    <script src="/assest/js/new1.js"></script>
+    <script src="./assest/js/hiddenCreateNew.js"></script>
 </html>
