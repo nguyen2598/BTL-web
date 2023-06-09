@@ -37,6 +37,25 @@ public class FilterControl extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         String queryCategory = request.getParameter("filtercategory");
         String queryPrice = request.getParameter("filterprice");
+//        String queryPrice = "";
+//        if (filterprice != null) {
+//            if (filterprice.length == 1) {
+//                queryPrice = filterprice[0];
+//            }
+//            if (filterprice.length == 2) {
+//                queryPrice = filterprice[0] + " or " + filterprice[1];
+//            }
+//            if (filterprice.length == 3) {
+//                queryPrice = "";
+//            }
+//        }
+//        String queryCategory = "";
+//        if (filtercategory != null) {
+//            queryCategory = "c.category_id=" + filtercategory[0];
+//            for (int i = 1; i < filtercategory.length; i++) {
+//                queryCategory = queryCategory + " or " + "c.category_id=" + filtercategory[i];
+//            }
+//        }
         DAO dao = new DAO();
         List<Product> listP = dao.getProductByFilter(queryCategory, queryPrice);
         PrintWriter out = response.getWriter();

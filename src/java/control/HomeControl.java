@@ -57,7 +57,6 @@ public class HomeControl extends HttpServlet {
                 }
             }
         }
-        
         Cart cart = new Cart(txt , listPP);
         int sizeCart = cart.getItem().size();
         request.setAttribute("sizeCart", sizeCart);

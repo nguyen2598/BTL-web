@@ -1,30 +1,26 @@
-package control;
-
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
  */
 
+package control;
 
 import dao.DAO;
-import entity.Cart;
 import entity.Product;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import java.util.List;
 
 /**
  *
  * @author admin
  */
-@WebServlet(urlPatterns={"/contact"})
-public class ContactControl extends HttpServlet {
+@WebServlet(name="DetailControl", urlPatterns={"/detail"})
+public class DetailControl extends HttpServlet {
    
     /** 
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
@@ -36,24 +32,12 @@ public class ContactControl extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        response.setContentType("text/html;charset=UTF-8");
-        request.setCharacterEncoding("UTF-8");
+        String product_id = request.getParameter("product_id");
         DAO dao = new DAO();
-        List<Product> listPP = dao.getAllProduct();
-        String txt = "";
-        Cookie [] arr = request.getCookies();
-        if(arr != null){
-            for(Cookie x : arr){
-                if(x.getName().equals("cart")){
-                    txt = x.getValue();
-                }
-            }
-        }
-        Cart cart = new Cart(txt , listPP);
-        int sizeCart = cart.getItem().size();
-        request.setAttribute("sizeCart", sizeCart);
+        Product p = dao.getProductByID(product_id);
         
-        request.getRequestDispatcher("contact.jsp").forward(request, response);
+        request.setAttribute("detail", p);
+        request.getRequestDispatcher("Detail.jsp").forward(request, response);
     } 
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
