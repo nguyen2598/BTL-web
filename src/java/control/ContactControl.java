@@ -1,13 +1,13 @@
+package control;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
  */
 
-package control;
 
 import dao.DAO;
 import entity.Cart;
-import entity.Category;
 import entity.Product;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -23,8 +23,8 @@ import java.util.List;
  *
  * @author admin
  */
-@WebServlet(name="HomeControl", urlPatterns={"/home"})
-public class HomeControl extends HttpServlet {
+@WebServlet(urlPatterns={"/contact"})
+public class ContactControl extends HttpServlet {
    
     /** 
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
@@ -36,18 +36,10 @@ public class HomeControl extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        //b1 get date from dao
+        response.setContentType("text/html;charset=UTF-8");
+        request.setCharacterEncoding("UTF-8");
         DAO dao = new DAO();
-        List<Product> listP = dao.getTop10Product();
         List<Product> listPP = dao.getAllProduct();
-        List<Category> listC = dao.getAllCategory();
-        Product last = dao.getLast();
-        //b2 set data to jsp
-        request.setAttribute("listP", listP);
-        request.setAttribute("listC", listC);
-        request.setAttribute("p", last);
-        
-        // đẩy sizeCart lên trang home 
         String txt = "";
         Cookie [] arr = request.getCookies();
         if(arr != null){
@@ -57,13 +49,11 @@ public class HomeControl extends HttpServlet {
                 }
             }
         }
-        
         Cart cart = new Cart(txt , listPP);
         int sizeCart = cart.getItem().size();
         request.setAttribute("sizeCart", sizeCart);
-
-
-        request.getRequestDispatcher("Home.jsp").forward(request, response);
+        
+        request.getRequestDispatcher("contact.jsp").forward(request, response);
     } 
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

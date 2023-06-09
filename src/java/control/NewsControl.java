@@ -2,12 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
  */
-
 package control;
 
 import dao.DAO;
+import dao.NewsDAO;
 import entity.Cart;
-import entity.Category;
+import entity.News;
 import entity.Product;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -23,52 +23,39 @@ import java.util.List;
  *
  * @author admin
  */
-@WebServlet(name="HomeControl", urlPatterns={"/home"})
-public class HomeControl extends HttpServlet {
-   
-    /** 
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
+@WebServlet(name = "NewsControl", urlPatterns = {"/news"})
+public class NewsControl extends HttpServlet {
+
+    /**
+     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
+     * methods.
+     *
      * @param request servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-    throws ServletException, IOException {
+            throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        //b1 get date from dao
-        DAO dao = new DAO();
-        List<Product> listP = dao.getTop10Product();
-        List<Product> listPP = dao.getAllProduct();
-        List<Category> listC = dao.getAllCategory();
-        Product last = dao.getLast();
-        //b2 set data to jsp
-        request.setAttribute("listP", listP);
-        request.setAttribute("listC", listC);
-        request.setAttribute("p", last);
-        
-        // đẩy sizeCart lên trang home 
-        String txt = "";
-        Cookie [] arr = request.getCookies();
-        if(arr != null){
-            for(Cookie x : arr){
-                if(x.getName().equals("cart")){
-                    txt = x.getValue();
-                }
-            }
+        try ( PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet NewsControl</title>");
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet NewsControl at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
         }
-        
-        Cart cart = new Cart(txt , listPP);
-        int sizeCart = cart.getItem().size();
-        request.setAttribute("sizeCart", sizeCart);
-
-
-        request.getRequestDispatcher("Home.jsp").forward(request, response);
-    } 
+    }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
-    /** 
+    /**
      * Handles the HTTP <code>GET</code> method.
+     *
      * @param request servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
@@ -76,12 +63,13 @@ public class HomeControl extends HttpServlet {
      */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
-    throws ServletException, IOException {
-        processRequest(request, response);
-    } 
+            throws ServletException, IOException {
+        request.getRequestDispatcher("news.jsp").forward(request, response);
+    }
 
-    /** 
+    /**
      * Handles the HTTP <code>POST</code> method.
+     *
      * @param request servlet request
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
@@ -89,12 +77,28 @@ public class HomeControl extends HttpServlet {
      */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
-    throws ServletException, IOException {
-        processRequest(request, response);
+            throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
+        request.setCharacterEncoding("UTF-8");
+
+
+        String date = request.getParameter("date").trim();
+        String title = request.getParameter("title").trim();
+        String desc = request.getParameter("desc").trim();
+        String link = request.getParameter("link").trim();
+        String image = request.getParameter("image").trim();
+
+        News news = new News(0, date, image, title, link, desc);
+        NewsDAO newDAO = new NewsDAO();
+        newDAO.addNews(news);
+        response.sendRedirect("./news");
+//        request.getRequestDispatcher("./news").forward(request, response);
+
     }
 
-    /** 
+    /**
      * Returns a short description of the servlet.
+     *
      * @return a String containing servlet description
      */
     @Override
